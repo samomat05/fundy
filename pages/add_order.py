@@ -5,7 +5,7 @@ import datetime
 # Ensure we have a valid fundraiser name in session_state.
 if "name" not in st.session_state or not st.session_state["name"]:
     st.warning("No fundraiser name set. Please configure it in the settings page.")
-    st.switch_page("pages\\settings.py")
+    st.switch_page("pages/settings.py")
 
 if "order_count" not in st.session_state:
     st.session_state["order_count"] = 0

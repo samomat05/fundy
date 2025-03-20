@@ -6,7 +6,7 @@ import math
 # If not, redirect the user to the settings page.
 if "name" not in st.session_state or not st.session_state["name"]:
     st.warning("No fundraiser name set. Please configure it in the settings page.")
-    st.switch_page("pages\\settings.py")
+    st.switch_page("pages/settings.py")
 
 # Retrieve the fundraiser name and items.
 name = st.session_state["name"]
